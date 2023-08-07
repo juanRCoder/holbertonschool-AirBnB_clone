@@ -2,8 +2,6 @@
 """
 this module has a class that inherits form BaseModel
 """
-
-
 from models.base_model import BaseModel
 
 
