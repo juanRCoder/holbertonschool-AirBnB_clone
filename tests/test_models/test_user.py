@@ -6,8 +6,8 @@ from models.user import User
 
 class TestUser(unittest.TestCase):
     def testEmail(self):
-        obj_email = User.email
-        self.assertIsNotNone(obj_email, "email is None")
+        user_email = User.email
+        self.assertIsNotNone(user_email, "email is None")
 
     def testPassword(self):
         obj_password = User.password
