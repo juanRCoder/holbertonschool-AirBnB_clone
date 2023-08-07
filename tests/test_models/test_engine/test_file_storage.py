@@ -10,8 +10,8 @@ from models.engine.file_storage import FileStorage
 class TestFileStorage(unittest.TestCase):
 
     def test_file_path_is_none(self):
-        file_path = FileStorage.__file_path
-        self.assertIsNotNone(file_path, "__file_path es None")
+        file_pat = FileStorage.__file_path
+        self.assertIsNotNone(file_pat, "__file_path es None")
 
     def test_file_object_is_list(self):
         file_object = FileStorage.__file_object
