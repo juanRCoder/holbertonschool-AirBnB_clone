@@ -67,7 +67,11 @@ $ ./console.py
 
 Documented commands (type help <topic>):
 ========================================
-EOF  help  quit
+EOF  create  destroy  help  quit  show
+
+Undocumented commands:
+======================
+all update
 
 (hbnb) 
 (hbnb) 
