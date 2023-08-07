@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import unittest
-from models.tmp_city import City
+from models.city import City
 
 
 class TestCity(unittest.TestCase):
