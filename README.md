@@ -77,5 +77,5 @@ $
 
 ## Authors:pencil2:
 
-- **Juan Ramirez**  <juanRCoder@gmail.com> 
-- **Oscar Morales** <omoralespj@gmail.com> 
+- **Juan Ramirez**   <<juanRCoder@gmail.com>>
+- **Oscar Morales**  <<omoralespj@gmail.com>>
