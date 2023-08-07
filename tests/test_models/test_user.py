@@ -6,7 +6,7 @@ from models.user import User
 
 class TestUser(unittest.TestCase):
     def testEmail(self):
-        obj_email = user.email
+        obj_email = User.email
         self.assertIsNotNone(file_email, "email is None")
 
     def testPassword(self):
