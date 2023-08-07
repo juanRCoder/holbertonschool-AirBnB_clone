@@ -2,7 +2,7 @@
 """ this module has TestCase of the BaseModel class """
 import unittest
 from datetime import datetime
-from models.base_models import BaseModel
+from models.base_model import BaseModel
 
 
 class TestBaseModel(unittest.TestCase):
