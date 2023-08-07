@@ -1,7 +1,14 @@
 #!/usr/bin/python3
+""" This module hast tha class FileStorage """
 import json
 import os
 from models.user import User
+from models.state import State
+from models.amenity import Amenity
+from models.city import City
+from models.place import Place
+from models.reviwe import Review
+
 
 class FileStorage:
     """this is a class filestorgare"""
@@ -16,24 +23,21 @@ class FileStorage:
         """this a method new that generate a new isntance"""
         key = f"{obj.__class__.__name__}.{obj.id}"
 
-        self.__objects[key] = obj        
+        self.__objects[key] = obj
 
     def save(self):
         """this method serealized the dictionary in JSON"""
         dictionary = {}
-        
+
         for k, v in self.__objects.items():
             dictionary[k] = v.to_dict()
-            
+
         with open(FileStorage.__file_path, "w", encoding="utf-8") as file:
-                json.dump(dictionary, file)  
-            
+            json.dump(dictionary, file)
+
     def reload(self):
-        from models.base_model import BaseModel
-
-
         """Deserialize the JSON file __file_path to __objects, if it exists"""
-        
+        from models.base_model import BaseModel
         if os.path.exists(FileStorage.__file_path):
             with open(FileStorage.__file_path, 'r', encoding="utf-8") as f:
                 data = f.read()
