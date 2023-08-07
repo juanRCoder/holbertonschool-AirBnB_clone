@@ -15,7 +15,8 @@ class TestFileStorage(unittest.TestCase):
 
     def test_file_object_is_list(self):
         file_object = FileStorage.__file_object
-        self.assertIsInstance(file_object, dict, "__file_object is not dictionary")
+        self.assertIsInstance(file_object, dict, "file_object is not dict")
+
 
 if _name_ == '_main_':
-    unittest.main() 
+    unittest.main()
