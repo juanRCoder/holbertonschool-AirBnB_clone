@@ -14,14 +14,12 @@ class TestBaseModel(unittest.TestCase):
         self.assertIsInstance(obj.updated_at, datetime)
 
     def test__str__(self):
-	""" TestCase __str__ method """
         obj = BaseModel()
         result_obj = str(obj)
         string_text = f"[BaseModel] ({obj.id}) {obj.__dict__}"
         self.assertEqual(result_obj, string_text)
 
     def test_save(self):
-        """ TestCase save method """
         obj = BaseModel()
         obj_updated1 = obj.updated_at
 
@@ -31,7 +29,6 @@ class TestBaseModel(unittest.TestCase):
         self.assertNotEqual(obj_updated1, obj_updated2)
 
     def test_to_dict(self):
-        """ TestCase to_dict method """
         obj = BaseModel()
         expected_dict = {
                 'id': obj.id,
@@ -41,7 +38,8 @@ class TestBaseModel(unittest.TestCase):
                 }
 
         obj_dict = obj.to_dict()
-        self.assertDictEqual(obj_dict, expected_dict) 
+        self.assertDictEqual(obj_dict, expected_dict)
+
 
 if __name__ == '__main__':
     unittest.main()
