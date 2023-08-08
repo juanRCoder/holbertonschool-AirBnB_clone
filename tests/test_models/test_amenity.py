@@ -4,6 +4,7 @@ from models.amenity import Amenity
 
 
 class TestAmenity(unittest.TestCase):
-    def test_amenity_name_is_none(self):
+    def test_name(self):
         obj_amenity = Amenity()
-        self.assertIsNone(obj_amenity.name, "name is not None")
+
+        self.assertEqual(obj_amenity.name, "")
