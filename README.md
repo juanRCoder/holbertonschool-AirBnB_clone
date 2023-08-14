@@ -11,7 +11,7 @@ as well as interacting with users. This project lays the foundation for future e
 ## Description of the command interpreter:speech_balloon:
 
 The command interpreter is a Bash-like interface specifically designed for the Airbnb clone project. It accepts a limited
-number of predefined commands created especially for the usage of the Airbnb website. It functions as the frontend of the
+number of predefined commands created especially for the usage of the AirBnB website. It functions as the frontend of the
 web application, allowing users to interact with the Python-based backend using object-oriented programming (OOP).
 
 ## Some of the commands available are:floppy_disk:
