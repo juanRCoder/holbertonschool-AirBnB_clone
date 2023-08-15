@@ -10,6 +10,7 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	/*margin-top: auto*/
 	position: absolute;
 	bottom: 0;
 }
