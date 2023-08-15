@@ -1,6 +1,6 @@
-## AirBnB clone - Web static
+# AirBnB clone - Web static
 
-# Learning Objectives:
+## Learning Objectives:
 * What is HTML
 * How to create an HTML page
 * What is a markup language
