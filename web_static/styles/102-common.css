@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #484848;
+	font-size: 14px;
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-image: url("../images/holberton-logo.png");
+	background-repeat: repeat-y;
+	background-position: right center;
+	background-size: 10%;
+}
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+@media screen and (max-width: 1050px) {
+	.container {
+	    max-width: 700px;	
+	}
+}
+@media screen and (max-width: 800px) {
+	.container {
+	    max-width: 500px;	
+	}
+}
+@media screen and (max-width: 550px) {
+	.container {
+	    max-width: 300px;	
+	}
+}
